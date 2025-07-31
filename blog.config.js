@@ -40,6 +40,20 @@ const BLOG = {
   ...require('./conf/ad.config'), // 广告营收插件
   ...require('./conf/plugin.config'), // 其他第三方插件 algolia全文索引
 
+   // 👇 新增评论配置（放在BLOG对象内部）
+  comment: {
+    enable: true,
+    provider: 'giscus',
+    giscus: {
+      repo: 'excelsiora/NotionNext',
+      repoId: 'R_kgDOPWFCtQ',
+      category: 'General',
+      categoryId: 'DIC_kwDOPWFCtc4CtoqO',
+      theme: 'light',
+      mapping: 'pathname',
+      reactionsEnabled: '1',
+      lazyLoad: true
+        
   // 高级用法
   ...require('./conf/layout-map.config'), // 路由与布局映射自定义，例如自定义特定路由的页面布局
   ...require('./conf/notion.config'), // 读取notion数据库相关的扩展配置，例如自定义表头
