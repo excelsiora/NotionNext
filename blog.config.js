@@ -52,7 +52,7 @@ const BLOG = {
       theme: 'light',
       mapping: 'pathname',
       reactionsEnabled: '1',
-      lazyLoad: true
+      lazyLoad: false
         
   // 高级用法
   ...require('./conf/layout-map.config'), // 路由与布局映射自定义，例如自定义特定路由的页面布局
